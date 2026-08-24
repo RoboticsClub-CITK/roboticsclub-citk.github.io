@@ -32,7 +32,7 @@
 
 .archive-event p {
     color: var(--muted);
-    max-width: 38em;
+    max-width:80%;
 }
 
 .archive-toggle {
