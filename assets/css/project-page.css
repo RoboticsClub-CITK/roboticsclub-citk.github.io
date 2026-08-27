@@ -1,0 +1,253 @@
+/* =====================================================
+   PROJECT DETAIL PAGE
+   ===================================================== */
+
+.project-detail {
+    background: var(--paper);
+    color: var(--ink);
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 8em clamp(2em, 10vw, 12em);
+}
+
+.project-detail .eyebrow {
+    color: var(--orange);
+    font-family: 'DM Mono', monospace;
+    font-size: 1em;
+    letter-spacing: .12em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.project-detail h1 {
+    color: var(--ink);
+    font-size: clamp(3em, 7vw, 6em);
+    line-height: .95;
+    margin-bottom: .5em;
+}
+
+.project-intro {
+    color: var(--muted);
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 2em;
+    max-width: 40em;
+}
+
+/* =====================================================
+   SECTIONS
+   ===================================================== */
+
+.project-section {
+    border-top: 1px solid rgba(34, 34, 34, .2);
+    margin-top: 4em;
+    padding-top: 3em;
+}
+
+.project-section:first-of-type {
+    margin-top: 5em;
+}
+
+.section-heading {
+    margin-bottom: 2em;
+}
+
+.section-heading span {
+    color: var(--orange);
+    font-family: 'DM Mono', monospace;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.project-section > p {
+    color: var(--muted);
+    max-width: 42em;
+}
+
+/* =====================================================
+   01 GALLERY
+   ===================================================== */
+
+.project-gallery {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 2em;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.project-gallery img {
+    cursor: zoom-in;
+    display: block;
+    height: 16em;
+    max-width: 100%;
+    min-width: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-gallery img.is-enlarged {
+    cursor: zoom-out;
+    grid-column: 1 / -1;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 980px) {
+    .project-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-gallery {
+        gap: .75em;
+        grid-template-columns: 1fr;
+        margin-top: 1.5em;
+    }
+}
+
+/* =====================================================
+   02 HARDWARE
+   ===================================================== */
+
+.hardware-grid {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 2em;
+}
+
+.hardware-card {
+    border: 1px solid rgba(34, 34, 34, .2);
+    padding: 1.75em;
+}
+
+.hardware-card span {
+    color: var(--orange);
+    font-family: 'DM Mono', monospace;
+    font-size: .8em;
+    letter-spacing: .08em;
+}
+
+.hardware-card h3 {
+    color: var(--ink);
+    font-size: 1.15em;
+    margin: .6em 0 .4em;
+}
+
+.hardware-card p {
+    color: var(--muted);
+    font-size: .92em;
+    margin: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .hardware-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hardware-grid {
+        gap: 1em;
+        grid-template-columns: 1fr;
+    }
+
+    .hardware-card {
+        padding: 1.4em;
+    }
+}
+
+/* =====================================================
+   04 RESOURCES
+   ===================================================== */
+
+.resource-list {
+    border-top: 1px solid rgba(34, 34, 34, .2);
+    margin-top: 2em;
+}
+
+.resource-link {
+    align-items: center;
+    border-bottom: 1px solid rgba(34, 34, 34, .2);
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+    transition: color .2s ease;
+}
+
+.resource-link:hover {
+    color: var(--orange);
+}
+
+.resource-type {
+    color: var(--orange);
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: .7em;
+    letter-spacing: .12em;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+.resource-link h3 {
+    color: inherit;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.resource-arrow {
+    color: inherit;
+    font-size: 1.3em;
+}
+
+/* =====================================================
+   BACK TO PROJECTS
+   ===================================================== */
+
+.project-detail > .button {
+    margin-top: 4em;
+}
+
+/* =====================================================
+   RESPONSIVE — PAGE LEVEL
+   ===================================================== */
+
+@media screen and (max-width: 980px) {
+    .project-detail {
+        padding: 6em clamp(1.5em, 6vw, 4em);
+    }
+
+    .project-section {
+        margin-top: 3em;
+        padding-top: 2.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-detail {
+        padding: 5em 1.25em;
+    }
+
+    .project-section {
+        margin-top: 2.5em;
+        padding-top: 2em;
+    }
+
+    .project-intro {
+        font-size: 1.05em;
+    }
+
+    .resource-link {
+        padding: 1.2em 0;
+    }
+
+    .resource-link h3 {
+        font-size: 1.1em;
+    }
+}
