@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Spider Quadruped | Robotics Club CITK</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/project-page.css" />
+    <link rel="icon" type="image/png" href="../images/ROBOTICS CLUB LOGO.png">
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
+</head>
+<body>
+
+    <section id="sidebar">
+        <div class="inner">
+            <div class="brand"><img src="../images/HEADER LOGO.png" alt="Robotics Club CITK logo" /></div>
+
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html#intro">Home</a></li>
+                    <li><a href="../index.html#projects" class="active" aria-current="page">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div id="wrapper">
+
+    <main class="project-detail">
+
+
+    <!-- =========================
+        PROJECT HEADER
+        ========================== -->
+
+    <p class="eyebrow">
+        / PROJECT 01 / ONGOING
+    </p>
+
+    <h1>
+        Spider Quadruped
+    </h1>
+
+
+    <!-- Short project description -->
+
+    <p class="project-intro">
+        This project was started in 2025 by Peter Basumatary for his
+        final year project. After its completion, the project was
+        picked up again by the juniors this year for further
+        development and improvement.
+    </p>
+
+
+
+        <!-- =========================
+             SECTION 01
+             GALLERY
+        ========================== -->
+
+        <section class="project-section">
+            <div class="section-heading">
+                <span>Gallery</span>
+            </div>
+
+
+            <div class="project-gallery">
+
+                    <img
+                        src="../images/pic02.jpg"
+                        alt="Spider Quadruped - Project prototype"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="../images/pic02.jpg"
+                        alt="Spider Quadruped - 3D-printed frame and legs"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="../images/pic03.jpg"
+                        alt="Spider Quadruped - Servo motor assembly"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="../images/pic04.jpg"
+                        alt="Spider Quadruped - Electronics and servo driver"
+                        loading="lazy"
+                    >
+            </div>
+
+        </section>
+
+
+
+    <!-- =========================
+    SECTION 02
+    HARDWARE / OVERVIEW / ETC.
+    ========================== -->
+
+    <!-- <section class="project-section">
+
+        
+    </section> -->
+    
+    
+    
+    <!-- =========================
+    SECTION 03
+    ADDITIONAL INFORMATION
+    ========================== -->
+    
+    <section class="project-section">
+        
+        <div class="section-heading">
+            <span>Development</span>
+        </div>
+        <p>
+            The current prototype consists of a 3D-printed frame and legs,
+            twelve MG996R servo motors and a PCA9685 servo driver.
+            The system is currently powered using a USB power bank.
+        </p>
+        <p>
+            Originally the goal was to use reinforcement learning to just make the bot walk. The project has been picked up again, with plans to change the power supply,
+            adaptive movements, wireless controlling feature, etc.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         SECTION 04
+         RESOURCES
+    ========================== -->
+
+    <section class="project-section">
+
+        <div class="section-heading">
+
+            <span>Resources</span>
+        </div>
+
+
+        <div class="resource-list">
+
+
+            <!-- GITHUB -->
+
+            <a
+                class="resource-link"
+                href="https://github.com/YOUR-ORG/YOUR-REPO"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <div>
+
+                    <span class="resource-type">
+                        CODE
+                    </span>
+
+                    <h3>
+                        GitHub Repository
+                    </h3>
+
+                </div>
+
+                <span class="resource-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BACK TO PROJECTS
+    ========================== -->
+
+    <a
+        class="button primary"
+        href="../index.html#projects"
+    >
+        Back to projects
+    </a>
+
+
+    </main>
+
+    </div>
+
+    <footer id="footer" class="wrapper">
+        <div class="inner">
+            <p>CITK ROBOTICS / built by students</p>
+            <p>&copy; 2026 Robotics Club, CIT Kokrajhar</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+<script>
+(function () {
+    'use strict';
+
+    document.querySelectorAll('.project-gallery img').forEach(function (image) {
+        image.addEventListener('click', function () {
+            image.classList.toggle('is-enlarged');
+        });
+    });
+}());
+</script>
+
+</body>
+</html>
